@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miziukv.AutoCompleteController">
+   <HBox prefHeight="27.0" prefWidth="421.0">
+      <MenuButton mnemonicParsing="false" onAction="#selectText" prefHeight="32.0" prefWidth="88.0" text="Select text">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#selectText" text="companies.txt" />
+            <MenuItem mnemonicParsing="false" onAction="#selectText" text="names2011.txt" />
+            <MenuItem mnemonicParsing="false" onAction="#selectText" text="smlwords.txt" />
+            <MenuItem mnemonicParsing="false" onAction="#selectText" text="words.txt" />
+            <MenuItem mnemonicParsing="false" onAction="#selectText" text="words2.txt" />
+         </items>
+      </MenuButton>
+      <Label alignment="CENTER" prefHeight="26.0" prefWidth="61.0" text="Search" />
+      <TextField fx:id="searchField" prefHeight="33.0" prefWidth="266.0" />
+   </HBox>
+   <ListView fx:id="resultList" prefHeight="308.0" prefWidth="421.0" />
+   <HBox prefHeight="363.0" prefWidth="428.0">
+      <VBox prefHeight="268.0" prefWidth="162.0">
+         <HBox prefHeight="28.0" prefWidth="168.0">
+            <Label prefHeight="27.0" prefWidth="78.0" text="Unsorted List" />
+            <Button fx:id="unsortedListType" mnemonicParsing="false" onAction="#handleUnsortedListType" text="Type: AL" />
+         </HBox>
+         <Label prefHeight="21.0" prefWidth="109.0" text="Exact Query Time" />
+         <Label prefHeight="42.0" prefWidth="101.0" text="All Matches Time" />
+         <HBox prefHeight="28.0" prefWidth="171.0">
+            <Label prefHeight="27.0" prefWidth="78.0" text="Sorted List" />
+            <Button fx:id="sortedListType" mnemonicParsing="false" onAction="#handleSortedListType" text="Type: AL" />
+         </HBox>
+         <Label prefHeight="21.0" prefWidth="109.0" text="Exact Query Time" />
+         <Label prefHeight="42.0" prefWidth="101.0" text="All Matches Time" />
+         <Label text="Binary Search Tree" />
+         <Label prefHeight="21.0" prefWidth="109.0" text="Exact Query Time" />
+         <Label prefHeight="42.0" prefWidth="101.0" text="All Matches Time" />
+         <Label text="Hash Table" />
+         <Label prefHeight="21.0" prefWidth="109.0" text="Exact Query Time">
+            <VBox.margin>
+               <Insets top="5.0" />
+            </VBox.margin>
+         </Label>
+         <Label prefHeight="42.0" prefWidth="101.0" text="All Matches Time" />
+      </VBox>
+      <VBox prefHeight="268.0" prefWidth="261.0">
+         <TextField fx:id="unsortedExactQueryTime" prefHeight="31.0" prefWidth="261.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+               <Insets top="25.0" />
+            </VBox.margin>
+         </TextField>
+         <TextField fx:id="unsortedAllMatchesTime" prefHeight="31.0" prefWidth="261.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </TextField>
+         <TextField fx:id="sortedExactQueryTime" prefHeight="31.0" prefWidth="261.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+               <Insets top="25.0" />
+            </VBox.margin>
+         </TextField>
+         <TextField fx:id="sortedAllMatchesTime" prefHeight="31.0" prefWidth="261.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </TextField>
+         <TextField fx:id="bstExactQueryTime" prefHeight="31.0" prefWidth="261.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+               <Insets top="25.0" />
+            </VBox.margin>
+         </TextField>
+         <TextField fx:id="bstAllMatchesTime" prefHeight="31.0" prefWidth="261.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </TextField>
+         <TextField fx:id="hashTableExactQueryTime" prefHeight="31.0" prefWidth="261.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+               <Insets top="25.0" />
+            </VBox.margin>
+         </TextField>
+         <TextField fx:id="hashTableAllMatchesTime" prefHeight="31.0" prefWidth="261.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </TextField>
+      </VBox>
+   </HBox>
+</VBox>

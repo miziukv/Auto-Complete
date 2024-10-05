@@ -79,7 +79,7 @@ The execution times are displayed in user-friendly formats (e.g., milliseconds, 
 ### Running the Application
 
 1. Clone or Download the Repository
-   - git clone https://github.com/miziukv/AutoComplete.git
+   - git clone https://github.com/miziukv/Auto-Complete.git
 2. Open the Project in Your IDE:
    - Import the project as a Java project.
    - Ensure that the JavaFX library is properly configured.
